@@ -1,0 +1,182 @@
+/* === Genenral === */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: #007765;
+  --color-dark_bg: #eeeeee;
+  --white-text: #ffffff;
+  --footer-bg: #333333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 500;
+  color: var(--white-text);
+  text-align: center;
+  padding: 160px;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-text {
+  font-size: 32px;
+}
+
+/* === Header === */
+
+.header {
+  background-color: var(--color-primary);
+  padding: 20px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 18px;
+}
+
+.header-item:not(:last-child)::after {
+  content: "|";
+  color: var(--white-text);
+  font-size: 24px;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.header-link {
+  color: var(--white-text);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.header-link:hover {
+  opacity: 0.5;
+}
+
+/* === Hero Section === */
+
+.hero-section {
+  background-image: url("../img/Header/Header-bg.png");
+}
+
+/* === Problem Section === */
+
+.problem-section {
+  background-color: var(--color-dark_bg);
+  padding: 38px 0 117px;
+}
+
+.problem-section .section-text:not(:last-child) {
+  margin-bottom: 58px;
+}
+
+/* === Quote Section === */
+
+.quote-section {
+  background-image: url("../img/PPC/PPC-bg.png");
+}
+
+.quote-section h3 {
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  color: var(--white-text);
+  padding: 140px 0;
+}
+
+/* === PPC Section === */
+
+.ppc-section {
+  padding: 60px 0 85px;
+}
+
+.ppc-content-logo {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 42px;
+}
+
+/* === Team Section === */
+
+.team-section {
+  background-color: var(--color-dark_bg);
+  padding: 71px 0 112px;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.team-member {
+  justify-self: center;
+  padding: 15px;
+}
+
+.team-member figcaption {
+  text-align: center;
+  margin-top: 17px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.role {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* === Footer === */
+
+.footer {
+  background-color: var(--footer-bg);
+  padding: 55px 0;
+}
+
+.policy {
+  max-width: 540px;
+  color: var(--white-text);
+  margin: 0 auto;
+  text-align: center;
+}
